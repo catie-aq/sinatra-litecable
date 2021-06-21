@@ -1,0 +1,65 @@
+GEM
+  remote: https://rubygems.org/
+  specs:
+    anyway_config (2.0.6)
+      ruby-next-core (>= 0.8.0)
+    haml (5.2.1)
+      temple (>= 0.8.0)
+      tilt
+    litecable (0.7.0)
+      anyway_config (>= 1.0)
+    multi_json (1.15.0)
+    mustermann (1.1.1)
+      ruby2_keywords (~> 0.0.1)
+    nio4r (2.5.4)
+    nio4r (2.5.4-java)
+    puma (5.0.4)
+      nio4r (~> 2.0)
+    puma (5.0.4-java)
+      nio4r (~> 2.0)
+    rack (2.2.3)
+    rack-cors (1.1.1)
+      rack (>= 2.0.0)
+    rack-protection (2.1.0)
+      rack
+    redis (4.2.3)
+    ruby-next-core (0.10.5)
+    ruby2_keywords (0.0.2)
+    sinatra (2.1.0)
+      mustermann (~> 1.0)
+      rack (~> 2.2)
+      rack-protection (= 2.1.0)
+      tilt (~> 2.0)
+    sinatra-contrib (2.1.0)
+      multi_json
+      mustermann (~> 1.0)
+      rack-protection (= 2.1.0)
+      sinatra (= 2.1.0)
+      tilt (~> 2.0)
+    slim (4.1.0)
+      temple (>= 0.7.6, < 0.9)
+      tilt (>= 2.0.6, < 2.1)
+    temple (0.8.2)
+    tilt (2.0.10)
+    websocket (1.2.8)
+
+PLATFORMS
+  ruby
+  universal-java-11
+  universal-java-15
+  x64-mingw32
+
+DEPENDENCIES
+  haml
+  litecable (~> 0.7.0)
+  puma
+  rack
+  rack-cors
+  redis
+  sinatra
+  sinatra-contrib
+  slim
+  websocket (~> 1.2.4)
+
+BUNDLED WITH
+   2.2.19

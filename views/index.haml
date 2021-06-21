@@ -1,0 +1,37 @@
+%html(lang="en")
+  %head
+    %meta(charset="UTF-8")/
+    %meta(http-equiv="X-UA-Compatible" content="IE=edge")/
+    %meta(name="viewport" content="width=device-width, initial-scale=1.0")/
+    
+    -#if ENV['RACK_ENV'] == "development"
+    -# %script(src= "http://localhost:1234/index.js")
+    -#else
+    -# You can add JS with Stimulus / Turbo
+    -# See https://gitlab.com/HOMA_CATIE/internal-projects-and-app-templates/stimulus-turbo-semanticui-parcel          
+    -# %script(src="index.js")
+
+    -# Semantic UI
+    -# %link(rel="stylesheet" href="semantic.min.css")
+
+    -# %w(site header container divider reset grid).each do |name| 
+      %link(rel="stylesheet" href="components/#{name}.min.css")
+
+    -# Semantic UI
+    -# %script(src="jquery-3.6.0.min.js")
+    -# %script(src="semantic.min.js")
+    %title Document
+
+    =haml :styles
+
+  %body 
+    
+    .ui.main.text.container
+      %h1.ui.header ACE Interface management
+
+  
+    .ui.text.container 
+      %h2 Emotional state 
+      %p 
+        This can set the emotional state, a set of backup buttons for voice inputs.
+        Here are the emotional states in ace language. You can change it and reload this page.
